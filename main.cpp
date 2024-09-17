@@ -10,10 +10,26 @@ struct User{
 };
 
 void registerUser(){
+      User newUser;
+      string regUsername = newUser.username;
+      string regPsw = newUser.password;
+      string repeatPassword;
 
+      cout << "Enter your username: ";
+      cin >> regUsername;
+      cout << "Enter your passowrd: ";
+      cin >> regPsw;
+      cout << "Please repeat a password: ";
+      cin >> repeatPassword;
+
+      if(regPsw != repeatPassword){
+            cout << "Password is not matching!" << endl;
+      }else{
+
+      }
 }
 
-void loginUser(){
+bool loginUser(){
 
 }
 
